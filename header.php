@@ -23,8 +23,12 @@
 <body <?php body_class(); ?>>
 <div id="page" class="">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-
-	<div id="sidebar" class="">
-	</div><!-- .sidebar -->
+	<div class="fit p4 bg-teal navy">
+		<?php if( is_front_page() && is_home() ):?>
+			<h1 class="h1 bold mt0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<?php else: ?>
+			<p class="h1 bold"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+		<?php endif; ?>	
+	</div>
 
 	<div id="content" class="">
