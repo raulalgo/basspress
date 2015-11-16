@@ -29,6 +29,11 @@
 		<?php else: ?>
 			<p class="h1 bold"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 		<?php endif; ?>	
+		<!--<div class="right col-4 bg-red">
+			<div class="col col-4 h3">Uno</div>
+			<div class="col col-4 h3">Dos</div>
+			<div class="col col-4 h3">Tres</div>
+		</div>-->
 	</div>
 
 	<div id="content" class="">
