@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() . '/bassplate/css/base.min.css' ?>">
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -21,13 +22,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-	<div class="fit p4 bg-teal navy">
+<div id="" class="">
+	<a class="skip-link screen-reader-text hide" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
+	<div class="flex flex-column p4 bg-teal navy">
 		<?php if( is_front_page() && is_home() ):?>
-			<h1 class="h1 bold mt0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="h0 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else: ?>
-			<p class="h1 bold"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<h1 class="h1 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 		<?php endif; ?>	
 		<!--<div class="right col-4 bg-red">
 			<div class="col col-4 h3">Uno</div>

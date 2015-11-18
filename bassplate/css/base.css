@@ -917,9 +917,24 @@ hr {
 @import 'basscss-progress';
 @import 'basscss-background-images';
 @import 'basscss-media-object';
-@import 'basscss-responsive-white-space';
-@import 'basscss-utility-headings';
-@import 'basscss-ui-utility-groups';
+@import 'basscss-responsive-white-space';*/
+/* Basscss Utility Headings */
+
+.h00 { font-size: 64px; font-size: 4rem }
+.h0 {  font-size: 48px;  font-size: 3rem }
+
+@media (min-width: 52em) {
+  .h00-responsive { font-size: 8vw }
+  .h0-responsive {  font-size: 6vw }
+  .h1-responsive {  font-size: 4vw }
+}
+
+@media (min-width: 96em) {
+  .h00-responsive { font-size: 7.68rem }
+  .h0-responsive {  font-size: 5.76rem }
+  .h1-responsive {  font-size: 3.84rem }
+}
+/*@import 'basscss-ui-utility-groups';
 @import 'basscss-table-object';
 @import 'basscss-highlight-dark';
 @import 'basscss-highlight';
