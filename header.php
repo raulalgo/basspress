@@ -28,8 +28,13 @@
 		<?php if( is_front_page() && is_home() ):?>
 			<h1 class="h0 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else: ?>
-			<h1 class="h1 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-		<?php endif; ?>	
+			<h1 class="h0 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<?php endif; 
+		$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="h3 caps mb0"><?php echo $description; ?></p>
+			<?php endif;
+		?>	
 		<!--<div class="right col-4 bg-red">
 			<div class="col col-4 h3">Uno</div>
 			<div class="col col-4 h3">Dos</div>
@@ -37,4 +42,4 @@
 		</div>-->
 	</div>
 
-	<div id="content" class="">
+	<div id="content" class="flex flex-column px4">
