@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text hide" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 	<div class="flex flex-column p4 bg-teal navy">
 		<?php if( is_front_page() && is_home() ):?>
-			<h1 class="h0 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="h0 bold mt4 mb0 caps ls0" style=""><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else: ?>
 			<h1 class="h0 bold mt4 mb0 caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; 
