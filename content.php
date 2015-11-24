@@ -10,20 +10,34 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border flex" <?php post_class(); ?>>
-	<div  class="col-2 bg-orange">
-	<?php
-		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-	?>
-	</div>
-	<div class="col-10 flex flex-column">
-		<header class=" px3 mt3">
+
+	<?php 
+		if ( is_single() ) :?>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-12 mx-auto border flex" <?php post_class(); ?>>			
+		<?php 
+		else: ?>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border flex" <?php post_class(); ?>>
+		<div  class="col-2 bg-navy">
+		<?php
+			// Post thumbnail.
+			twentyfifteen_post_thumbnail();
+		?>
+		</div>
+		<?php endif;
+		?>	
+	
+	
+		
 			<?php
-				if ( is_single() ) :
-					the_title( '<h1 class="entry-title h1" style="letter_spacing:0">', '</h1>' );
-				else :
-					the_title( sprintf( '<h2 class="mt0 h2 ls0"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+				if ( is_single() ) : ?>
+				<div class="col-12 flex flex-column">
+					<header class="px3 mt4">
+					<p class="h5 italic grey mb0"><?php the_date('F j, Y','','', TRUE); ?></p>
+					<?php the_title( '<h1 class="entry-title h0-responsive mt0 hr" style="letter_spacing:0">', '</h1>' );
+				else : ?>
+				<div class="col-10 flex flex-column">
+					<header class=" px3 mt3">
+					<?php the_title( sprintf( '<h2 class="mt0 h2 ls0"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 				endif;
 			?>
 		</header><!-- .entry-header -->

@@ -43,7 +43,9 @@
     "flex-object": "latest"
   },
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "cssnext": "^1.1.0",
+    "gulp": "^3.9.0",
     "http-server": "^0.8.0",
     "watch": "^0.14.0"
   },
