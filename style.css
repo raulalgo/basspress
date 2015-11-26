@@ -11,3 +11,16 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+
+.comment-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.comment-body {
+	padding-top: 16px; padding-top: 1rem; padding-bottom: 16px; padding-bottom: 1rem;
+}  
+
+.children {
+	list-style: none;
+}

@@ -210,3 +210,7 @@ body:before {
 }
 
 .ls0 {  letter-spacing: 0 }
+
+.serif {
+  font-family: serif;
+}
