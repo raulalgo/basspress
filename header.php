@@ -34,7 +34,8 @@
 				<?php endif;
 			?>
 		<?php else: ?>
-			<div class="flex py2 px3 navy">
+			<div class="bg-orange absolute top-0 left-0 right-0 z1" style="min-height:480px;z-index:-1">hola</div>
+			<div class="flex py2 px3 navy z2">
 				<h1 class="h3 bold caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; ?>
 			

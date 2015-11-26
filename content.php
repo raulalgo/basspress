@@ -10,7 +10,7 @@
  */
 ?>
 
-		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border flex" <?php post_class(); ?>>			
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex" <?php post_class(); ?>>			
 
 	<?php 
 		if ( is_single() ) :?>
