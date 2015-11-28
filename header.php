@@ -8,7 +8,8 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
- ?><!DOCTYPE html>
+ ?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -19,7 +20,7 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<?php //wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -41,12 +42,6 @@
 			<div class="flex py2 px3 navy z2">
 				<h1 class="h3 bold caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; ?>
-			
-		<!--<div class="right col-4 bg-red">
-			<div class="col col-4 h3">Uno</div>
-			<div class="col col-4 h3">Dos</div>
-			<div class="col col-4 h3">Tres</div>
-		</div>-->
 	</div>
 
 	<div id="content" class="flex flex-column px4">
