@@ -14,7 +14,7 @@
 
 	<?php 
 		if ( is_single() ) :?>
-		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex difuse-sh" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex difuse-sh o80" <?php post_class(); ?>>
 		<?php 
 		else: ?>
 		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex rounded solid-sh" <?php post_class(); ?>>
@@ -25,7 +25,7 @@
 		
 			<?php
 				if ( is_single() ) : ?>
-				<div class="col-12 flex flex-column ">
+				<div class="col-12 flex flex-column">
 					<header class="px3 mt4 mb2">
 					<p class="h5 italic grey mb0"><?php the_date('F j, Y','','', TRUE); ?></p>
 					<?php the_title( '<h1 class="entry-title h0-responsive mt2 mb0" style="letter_spacing:0">', '</h1>' ); ?>
