@@ -10,18 +10,14 @@
  */
 ?>
 
-		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex" <?php post_class(); ?>>			
+					
 
 	<?php 
 		if ( is_single() ) :?>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex difuse-sh" <?php post_class(); ?>>
 		<?php 
 		else: ?>
-		<div  class="col-2 bg-navy">
-		<?php
-			// Post thumbnail.
-			twentyfifteen_post_thumbnail();
-		?>
-		</div>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex rounded solid-sh" <?php post_class(); ?>>
 		<?php endif;
 		?>	
 	
@@ -36,7 +32,7 @@
 					<div class="col-3 bg-black mt2" style="height: 0.5rem">&nbsp;</div>
 				<?php
 				else : ?>
-				<div class="col-10 flex flex-column">
+				<div class="col-12 flex flex-column">
 					<header class=" px3 mt3">
 					<?php the_title( sprintf( '<h2 class="mt0 mb0 h0 ls0"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 				endif;

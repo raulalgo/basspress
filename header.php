@@ -44,4 +44,4 @@
 		<?php endif; ?>
 	</div>
 
-	<div id="content" class="flex flex-column px4">
+	<div id="content" class="flex flex-column px4" style="">
