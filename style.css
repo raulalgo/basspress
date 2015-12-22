@@ -77,3 +77,17 @@
 	opacity: .2;
 		
 }
+
+.blogTitle a {
+	color: white;
+
+}
+
+.blogTitle a:visited {
+	color: white;
+}
+
+.blogTitle a:hover {
+	color: white;
+	text-decoration: underline;
+}

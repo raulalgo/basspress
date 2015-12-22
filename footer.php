@@ -22,7 +22,8 @@
 				 */
 				do_action( 'twentyfifteen_credits' );
 			?>
-			<a class="white" href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'basspress' ), 'WordPress' ); ?></a>
+			<!--<a class="white" href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Deuvede es un podcast de Carlos Álvarez (<a href=@husky) y Raúl Álvarez (@raulalgo)', 'basspress' ), 'WordPress' ); ?></a>-->
+			<p class="mb0">Deuvedé es un Podcast de Carlos Álvarez (<a href="http://twitter.com/husky" class="white underline">@husky</a>) y Raúl Álvarez (<a href="http://twitter.com/raulalgo" class="white underline">@raulalgo</a>)</p>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

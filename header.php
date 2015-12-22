@@ -28,19 +28,19 @@
 	<a class="skip-link screen-reader-text hide" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 	
 		<?php if( is_front_page() && is_home() ):?>
-			<div class="flex flex-column p4 bg-teal navy">
-				<h1 class="h0 bold mt4 mb0 caps ls0" style=""><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="flex flex-column p4 bg-navy white blogTitle">
+				<h1 class="h0 mt4 mb0 caps ls0 white" style=""><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class=""><?php bloginfo( 'name' ); ?></a></h1>
 			<?php $description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
 					<p class="h3 caps mb0"><?php echo $description; ?></p>
 				<?php endif;
 			?>
 		<?php else: ?>
-			<div class="bg-blue absolute top-0 left-0 right-0 z1" style="height:480px;z-index:-1;overflow:hidden;">
+			<div class="absolute top-0 left-0 right-0 z1" style="height:480px;z-index:-1;overflow:hidden;">
 				<?php the_post_thumbnail('full'); ?>
 			</div>
-			<div class="flex py2 px3 navy z2">
-				<h1 class="h3 bold caps" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="flex p3 z2">
+				<h1 class="h3 bold caps mt0 mb0" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; ?>
 	</div>
 

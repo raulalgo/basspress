@@ -14,10 +14,10 @@
 
 	<?php 
 		if ( is_single() ) :?>
-		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex difuse-sh o80" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" class="mt4 mb2 mxn2 col-10 mx-auto border bg-white flex" <?php post_class(); ?>>
 		<?php 
 		else: ?>
-		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex rounded solid-sh" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" class="mt2 mb2 mxn2 col-10 mx-auto border bg-white flex rounded" <?php post_class(); ?>>
 		<?php endif;
 		?>	
 	

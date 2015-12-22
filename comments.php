@@ -38,6 +38,7 @@ if ( post_password_required() ) {
 						'style'       => 'ol',
 						'short_ping'  => true,
 						'avatar_size' => 56,
+						'callback'	  => 'basspress_comment' 		
 					) );
 				?>
 			</ol><!-- .comment-list -->
