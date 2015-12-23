@@ -12,6 +12,22 @@
  Text Domain:  twenty-fifteen-child
 */
 
+.bg-deuvegreen {
+  background-color: #00515C;
+}
+
+.bg-deuvelight {
+  background-color: #009099;
+}
+
+.deuvegreen {
+  color: #00515C;
+}
+
+.deuvelight {
+  color: #009099;
+}
+
 .comment-list {
 	list-style: none;
 	padding-left: 0;
@@ -262,7 +278,7 @@ form p input[type=submit]:focus {
 
 form p input[type=submit] {
   color: #fff;
-  background-color: #0074d9;
+  background-color: #00515C;
   border-radius: 3px;
 }
 

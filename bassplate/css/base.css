@@ -170,7 +170,7 @@ body {
 }
 
 a {
-  color: #001f3f;
+  color: #00515C;
   text-decoration: none;
 }
 
@@ -302,7 +302,7 @@ hr {
 
 .btn-primary {
   color: #fff;
-  background-color: #0074d9;
+  background-color: #00515C;
   border-radius: 3px;
 }
 
@@ -974,7 +974,7 @@ hr {
 
 }
 
-@font-face {
+/*@font-face {
     font-family: 'FranklinGothic';
     src: url('/fonts/franklingothic-bookit-webfont.eot');
     src: url('/fonts/franklingothic-bookit-webfont.eot?#iefix') format('embedded-opentype'),
@@ -985,7 +985,7 @@ hr {
     font-weight: normal;
     font-style: italic, oblique;
 
-}
+}*/
 
 
 @font-face {
