@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() . '/bassplate/css/base.min.css' ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() . '/base.css' ?>">
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -51,12 +51,12 @@
 				<div class="mt0 mb0 mr1 inline">
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 			height="24px" viewBox="0 0 100 84" enable-background="new 0 0 100 84" xml:space="preserve">
-						<path fill="#001f3f" d="M75,12c6.903,0,12,6.096,12,13s-5.097,13-12,13H62L50,59L38,38H25c-6.905,0-12-6.096-12-13s5.095-13,12-13
+						<path fill="#FFFFFF" d="M75,12c6.903,0,12,6.096,12,13s-5.097,13-12,13H62L50,59L38,38H25c-6.905,0-12-6.096-12-13s5.095-13,12-13
 							H75z M75,0H25C11.212,0,0,11.212,0,25c0,13.787,11.212,25,25,25h5l20,34l20-34h5c13.787,0,25-11.213,25-25
 							c0-13.788-11.217-25-25.004-25H75z"/>
 					</svg>
 				</div>
-				<h1 class="h3 bold caps mt0 mb0" style="letter-spacing:0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="h3 bold caps mt0 mb0 white" style="letter-spacing:0"><a class="white" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; ?>
 	</div>
 
